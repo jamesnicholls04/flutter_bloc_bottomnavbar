@@ -29,7 +29,6 @@ class HomePage extends StatelessWidget {
         return BottomNavigationBar(
           currentIndex: state.index,
           onTap: (index) {
-            print(context.bloc<MyCubit>().state.index);
             if (index == 0) {
               context.bloc<MyCubit>().changeToStateA();
             } else if (index == 1) {
